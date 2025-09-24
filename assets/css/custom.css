@@ -1,0 +1,328 @@
+/* Custom CSS — Obsidian-inspired theme for icemedica341's CS Notes.
+ *
+ * Overrides Hextra's default colors to match the look and feel of
+ * Obsidian's default dark theme (clean, minimal, blue accent).
+ */
+
+@layer theme {
+  :root {
+    /* Obsidian blue accent (~226deg hue) */
+    --primary-hue: 226deg;
+    --primary-saturation: 80%;
+    --primary-lightness: 65%;
+
+    /* Monospace font for code */
+    --hx-default-mono-font-family:
+      "JetBrains Mono", "Fira Code", "Cascadia Code", "Consolas",
+      "Liberation Mono", monospace;
+  }
+}
+
+/* =============================================
+   DARK MODE (default — matches Obsidian dark)
+   ============================================= */
+
+:is(html[class~="dark"] *) {
+  --hx-bg-dark: #1e1e1e;
+  --hx-bg-darker: #181818;
+  --hx-bg-card: #252525;
+  --hx-bg-hover: #2e2e2e;
+  --hx-bg-code: #2d2d2d;
+  --hx-border-color: #333333;
+  --hx-text-main: #d4d4d4;
+  --hx-text-dim: #9d9d9d;
+  --hx-text-heading: #e8e8e8;
+}
+
+html.dark body {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+html.dark .hextra-nav-container-blur {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333333;
+}
+
+html.dark .hextra-sidebar-container {
+  background-color: #181818;
+  border-right: 1px solid #333333;
+}
+
+html.dark .hextra-sidebar-active-item {
+  background-color: #2e2e2e;
+}
+
+html.dark .hextra-sidebar-container a:hover {
+  background-color: #2e2e2e;
+}
+
+html.dark .hextra-card {
+  background-color: #252525;
+  border-color: #333333;
+}
+
+html.dark .hextra-card:hover {
+  border-color: #4a4a4a;
+}
+
+html.dark pre,
+html.dark code:not(.code-block code) {
+  background-color: #2d2d2d;
+  color: #d4d4d4;
+}
+
+html.dark .code-block {
+  background-color: #2d2d2d;
+  border: 1px solid #333333;
+}
+
+html.dark .content code:not(.code-block code) {
+  background-color: rgba(45, 45, 45, 0.8);
+  color: #d4d4d4;
+  border: 1px solid #3a3a3a;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+}
+
+html.dark a {
+  color: #6c8cff;
+}
+
+html.dark a:hover {
+  color: #8aa8ff;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #e8e8e8;
+}
+
+html.dark table {
+  border-color: #333333;
+}
+
+html.dark th,
+html.dark td {
+  border-color: #333333;
+}
+
+html.dark tr:nth-child(even) {
+  background-color: #252525;
+}
+
+html.dark blockquote {
+  border-left-color: #6c8cff;
+  background-color: rgba(108, 140, 255, 0.05);
+  color: #b0b0b0;
+}
+
+html.dark hr {
+  border-color: #333333;
+}
+
+html.dark .hextra-toc {
+  border-left-color: #333333;
+}
+
+html.dark .hextra-search-dialog {
+  background-color: #252525;
+  border: 1px solid #444444;
+}
+
+html.dark .hextra-search-input {
+  background-color: #2d2d2d;
+  border-color: #444444;
+  color: #d4d4d4;
+}
+
+html.dark .hextra-search-excerpt {
+  color: #9d9d9d;
+}
+
+html.dark .hextra-footer {
+  border-top: 1px solid #333333;
+  color: #9d9d9d;
+}
+
+/* =============================================
+   LIGHT MODE
+   ============================================= */
+
+:root {
+  --hx-text-main: #1f2328;
+  --hx-text-dim: #656d76;
+}
+
+/* =============================================
+   GENERAL
+   ============================================= */
+
+.content {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.7;
+}
+
+/* =============================================
+   OBSIDIAN-LIKE TABLES
+   ============================================= */
+
+.content table,
+.markdown-body table {
+  display: table;
+  border-collapse: collapse;
+  width: auto;
+  margin: 0.8em 0;
+  font-size: 0.9em;
+}
+
+.content th,
+.markdown-body th {
+  background-color: var(--hx-bg-hover, #2e2e2e);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.4em 0.6em;
+  border: 1px solid var(--hx-border-color, #333);
+}
+
+.content td,
+.markdown-body td {
+  padding: 0.35em 0.6em;
+  border: 1px solid var(--hx-border-color, #333);
+}
+
+html.dark .content tr:nth-child(even) td,
+html.dark .markdown-body tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+html:not(.dark) .content tr:nth-child(even) td,
+html:not(.dark) .markdown-body tr:nth-child(even) td {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* =============================================
+   OBSIDIAN-LIKE HEADINGS — subtle, not enlarged
+   ============================================= */
+
+/* Fix: callout divs sometimes get wrapped in <h2> by Hugo's goldmark.
+   Reset heading styles when it contains a callout so it renders as
+   a normal block-level container instead of a heading. */
+h2:has(div.hx\\:overflow-x-auto) {
+  all: revert;
+  display: block;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+h2:has(div.hx\\:overflow-x-auto) .subheading-anchor {
+  display: none;
+}
+
+/* Content headings: Obsidian keeps headings compact */
+.content h1,
+.markdown-body h1,
+article h1 {
+  font-size: 1.4em;
+  font-weight: 700;
+  border-bottom: 1px solid var(--hx-border-color, #333);
+  padding-bottom: 0.2em;
+  margin: 1.2em 0 0.6em;
+}
+
+.content h2,
+.markdown-body h2,
+article h2 {
+  font-size: 1.15em;
+  font-weight: 700;
+  margin: 1.1em 0 0.5em;
+  border: none;
+}
+
+.content h3,
+.markdown-body h3,
+article h3 {
+  font-size: 1.05em;
+  font-weight: 700;
+  margin: 1em 0 0.4em;
+  border: none;
+}
+
+.content h4,
+.markdown-body h4,
+article h4,
+.content h5,
+.markdown-body h5,
+article h5,
+.content h6,
+.markdown-body h6,
+article h6 {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0.8em 0 0.3em;
+}
+
+/* Subheading anchors (# icon) hidden by default, visible on hover.
+   Hextra defaults to opacity:0 and transitions to 1 on hover.
+   No override needed — keep default behavior. */
+
+/* =============================================
+   CHECKBOX / TASK LIST STYLING (Obsidian-like)
+   ============================================= */
+
+.content ul:has(li input[type="checkbox"]),
+.markdown-body ul:has(li input[type="checkbox"]) {
+  list-style: none;
+  padding-left: 0.5em;
+}
+
+.content li input[type="checkbox"],
+.markdown-body li input[type="checkbox"] {
+  margin-right: 0.4em;
+  transform: scale(1.1);
+}
+
+.content li:has(input[type="checkbox"]:checked),
+.markdown-body li:has(input[type="checkbox"]:checked) {
+  color: var(--hx-text-dim, #9d9d9d);
+  text-decoration: line-through;
+}
+
+:root {
+  --hextra-max-content-width: 76rem;
+}
+
+.hextra-sidebar-container ul li a {
+  font-size: 0.875rem;
+  padding: 0.3rem 0.75rem;
+}
+
+html:not(.dark) .hextra-sidebar-container a:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Fix: blockquotes inside callouts show checklist items (❌/✅/☑️).
+   Remove italic style (they're checklist feedback, not citations)
+   and reduce margins for compact Obsidian-like display. */
+div.hx\\:overflow-x-auto blockquote {
+  font-style: normal;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+* {
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
