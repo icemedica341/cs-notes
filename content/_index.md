@@ -1,5 +1,5 @@
 ---
-title: "icemedica341's CS Notes"
+title: "CS Notes"
 toc: false
 ---
 

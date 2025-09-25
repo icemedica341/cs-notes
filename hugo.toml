@@ -1,5 +1,5 @@
 baseURL = "https://icemedica341.github.io/CS-Notes/"
-title = "icemedica341's CS Notes"
+title = "CS Notes"
 theme = "hextra"
 defaultContentLanguage = "en"
 
@@ -20,7 +20,7 @@ defaultContentLanguage = "en"
   # Hextra specific
   description = "Computer Science, Hardware, and Mathematics notes"
   navbar.display = true
-  navbar.title = "icemedica341's CS Notes"
+  navbar.title = "CS Notes"
 
   # Edit URL (GitHub)
   editURL.base = "https://github.com/icemedica341/CS-Notes/edit/main/content"
@@ -28,6 +28,18 @@ defaultContentLanguage = "en"
   # Footer
   footer.display = true
 
+# Search configuration
+[params.search]
+  enable = true
+  # FlexSearch index options
+  [params.search.flexsearch]
+    tokenize = "forward"
+
+# Code copy button always visible
+[params.highlight]
+  [params.highlight.copy]
+    enable = true
+    display = "always"
 [params.theme]
   # dark | light | system
   default = "dark"
@@ -59,6 +71,7 @@ defaultContentLanguage = "en"
       inline = [['$', '$']]
 
   # Syntax highlighting
+  # Syntax highlighting — Hextra uses Chroma with configurable colors
   [markup.highlight]
     anchorLineNumbers = false
     codeFences = true
@@ -66,7 +79,7 @@ defaultContentLanguage = "en"
     guessSyntax = false
     hl_Lines = ""
     lineNoStart = 1
-    lineNumbers = false
+    lineNumbers = true
     lineNumbersInTable = true
     noClasses = true
     style = "github"
