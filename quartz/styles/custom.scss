@@ -1,0 +1,82 @@
+@use "./variables.scss" as *;
+
+// Primary 2.10.0 reading-view port (light mode).
+// Snippet sources live in the author's Obsidian vault; Quartz equivalents below.
+// Palette (Primary light tokens): paper #f9f3ec, sidebar #eee7dd,
+// border #e4d8c3, text #523e22, muted #836b49, accent #a2815d.
+
+// --- 1. paper-background-light: warm paper background in light mode ---
+// (functionally covered by `light: #f9f3ec` in quartz.config.yaml;
+// hardened here so article chrome matches even where vars don't reach)
+body {
+  background-color: #f9f3ec;
+}
+[saved-theme="dark"] body {
+  background-color: var(--light);
+}
+
+// --- 2. wider-margins: readable line length 728px ---
+body {
+  --file-line-width: 728px;
+}
+.center > article {
+  max-width: 728px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// --- 3. bigger-latex: larger math (Quartz renders KaTeX; MathJax kept for parity) ---
+article .katex,
+article .MathJax,
+article mjx-container.MathJax {
+  font-size: 1.2em;
+}
+
+// --- 4. bold-links: bold, no underline; internal = accent, external = muted ---
+article a {
+  font-weight: bold;
+  text-decoration: none;
+}
+article a.internal {
+  color: var(--secondary);
+}
+article a:not(.internal) {
+  color: var(--darkgray);
+}
+
+// --- 5. keep-unwrapped: second table column never wraps ---
+article table td:nth-child(2) {
+  white-space: nowrap;
+}
+
+// --- 6. table-auto-size: content-sized tables, never stretched ---
+article table {
+  table-layout: auto !important;
+  width: auto !important;
+  max-width: none !important;
+}
+
+// --- 7. table-centre-element: responsive cap + airy top-aligned cells ---
+// (after table-auto-size, matching Obsidian snippet cascade order)
+article table {
+  max-width: 100% !important;
+}
+article table td,
+article table th {
+  padding-bottom: 1em !important;
+  vertical-align: top !important;
+}
+
+// --- 8. thick-cursor: editor-only (CodeMirror); no editor in static site ---
+// Kept verbatim for 1:1 snippet parity; matches nothing in the build output.
+.cm-editor .cm-cursor {
+  background-color: black !important;
+  width: 3px !important;
+  border-left: none !important;
+  opacity: 1 !important;
+  z-index: 10 !important;
+}
+.cm-editor.cm-focused .cm-cursor {
+  visibility: visible !important;
+  opacity: 1 !important;
+}

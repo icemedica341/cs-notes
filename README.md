@@ -2,7 +2,7 @@
 
 Computer science notes — math, hardware, networking, and systems engineering — built as a static site with [Hugo](https://gohugo.io/) + [Hextra](https://imfing.github.io/hextra/).
 
-**Site:** https://icemedica341.github.io/CS-Notes/
+**Site:** https://icemedica341.github.io/cs-notes/
 
 ## Quick start
 

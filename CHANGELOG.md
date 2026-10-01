@@ -9,7 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Automated content backup snapshot.
+- Quartz 5 rebuild on Primary 2.10.0 @728px (Paper #f9f3ec, Inter/IBM Plex Mono, KaTeX 1.2em) — 188 notes (177 vault + 10 networking + index), sitemap absolute, deploy node22→ci→install-plugins→build→upload public.
+
+### Fixed
+
+- Loop 2 surgical: dual-font dedupe (Inter single href), canonical Hardware/hardware dedupe, remove dead weight [redacted] 207+content/docs 191, hard line breaks in callouts, Networking Title-Case.
 
 ## [0.3.0] - 2026-06-07
 
