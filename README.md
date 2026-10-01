@@ -1,13 +1,13 @@
 # CS Notes
 
-Computer science notes — math, hardware, networking, and systems engineering — built as a static site with [Hugo](https://gohugo.io/) + [Hextra](https://imfing.github.io/hextra/).
+Computer science notes — math, hardware, networking, and systems engineering — built as a static site with [Quartz](https://quartz.jzhao.xyz/).
 
 **Site:** https://icemedica341.github.io/cs-notes/
 
 ## Quick start
 
 ```sh
-hugo server -D
+npx quartz build --serve
 ```
 
 ## Structure
@@ -23,9 +23,7 @@ hugo server -D
 ## Build
 
 ```sh
-pip install pyyaml   # if missing
-python3 scripts/[redacted]
-hugo
+npx quartz build
 ```
 
 Output goes to `public/` — auto-deployed via GitHub Actions on push to `main`.

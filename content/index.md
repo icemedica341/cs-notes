@@ -8,7 +8,7 @@ Study notes for computer science — hardware, mathematics, software, and networ
 
 ## Sections
 
-- [Hardware](./Hardware/) — digital logic, architecture, and circuits.
-- [Math](./Math/) — discrete math, calculus, probability, and linear algebra.
-- [Software](./Software/) — programming, algorithms, and systems.
+- [Hardware](./hardware/) — digital logic, architecture, and circuits.
+- [Math](./math/) — discrete math, calculus, probability, and linear algebra.
+- [Software](./software/) — programming, algorithms, and systems.
 - [Networking](./networking/) — SC2008 Computer Networks course notes.
