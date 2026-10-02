@@ -102,3 +102,30 @@ html {
 .explorer {
   min-width: 0;
 }
+
+// --- 11. explorer-loop6 toolbar (Loop 6 retry): expand-all only (F1), scoped to .explorer only ---
+.explorer .explorer-loop6-toolbar {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.25rem 0 0.5rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--light);
+  z-index: 2;
+}
+.explorer .explorer-loop6-btn {
+  background-color: transparent;
+  border: 1px solid var(--lightgray);
+  border-radius: 4px;
+  color: var(--secondary);
+  font-family: var(--headerFont);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 0.15rem 0.55rem;
+  cursor: pointer;
+}
+.explorer .explorer-loop6-btn:hover {
+  color: var(--tertiary);
+  border-color: var(--gray);
+}
