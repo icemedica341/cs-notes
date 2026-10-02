@@ -507,7 +507,7 @@ There are some variations of *MOSFETs* that reduce the leakage of charge carrier
 
 There is a even newer type called **Gate-All-Around Field-Effect Transistors (GAAFETs)** that takes this idea even further by wrapping the gate around **all four sides** of the channel, which is necessary as transistors shrink to 3nm and below, **quantum tunneling effects** becomes a problem
 
-> [!physics] What Is Quantum Tunnelling?
+> [!note|physics] What Is Quantum Tunnelling?
 > In the world of really really small things, **particles behave like waves**, and part of that wave can pass through a really thin wall
 >
 > This effect is known as **quantum tunnelling** and it becomes especially important

@@ -4,7 +4,7 @@ date: 2025-11-08
 draft: false
 ---
 
-> [!Why we invented it]
+> [!tip|Why we invented it]
 > Boolean logic traditionally focuses on **truth-functional primitives** like `AND`, `OR`, and `NOT`.
 > But real-world logic often demands **relational conditions**—like detecting **difference** or **equality** between inputs.
 

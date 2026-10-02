@@ -1,5 +1,5 @@
 
-> [!Summary]
+> [!tip|Summary]
 > Signed multiplication in 2’s complement systems behaves like normal multiplication—with a few critical architectural quirks.
 > These quirks arise from modular arithmetic, bit-width constraints, and the encoding of negative values.
 > This notebook documents the four foundational principles that govern signed multiplication.
@@ -19,7 +19,7 @@
 
 ## 📏 Maximum Bit-Length Is $m + n$
 
-> [!Why this matters]
+> [!tip|Why this matters]
 > Multiplying an $m$-bit number by an $n$-bit number yields a product of **at most $m + n$ bits**
 
 > ### Derivation
@@ -38,7 +38,7 @@ Thus, we always allocate $m + n$ bits to avoid overflow
 
 ## 🧮 Sign Extension Preserves Value via Modular Arithmetic
 
-> [!Why it works]
+> [!tip|Why it works]
 > Extending the sign bit (MSB) preserves the value because 2’s complement is a **modular system**
 
 ### Formal Insight
@@ -56,7 +56,7 @@ Thus, we always allocate $m + n$ bits to avoid overflow
 
 ## ⚙️ Signed Bit Triggers 2’s Complement Correction
 
-> [!Why we use 2’s complement]
+> [!tip|Why we use 2’s complement]
 > The signed bit (MSB of multiplier) represents **negative weight**.
 > We can’t multiply it like a normal digit—it contributes a **−2ⁿ** term.
 

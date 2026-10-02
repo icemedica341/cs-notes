@@ -4,7 +4,7 @@ date: 2025-11-08
 draft: false
 ---
 
-> [!notes] Preface
+> [!note|notes] Preface
 > When we represent signed integers in binary, we want to optimise it for addition
 >
 > As seen in [[🔁 Method of Complements| derived expression]], we have 2 ways to achieve it, through finding **radix complement** or the **diminished radix complement**
@@ -93,7 +93,7 @@ Since we performed a **full number bitflip** in the first step
 >
 > The **bits that are after the first 1**, will only have flipped once and thus will have net change——bit-flip
 
-> [!Fun Fact] Permanent Bit
+> [!tip|Fun Fact] Permanent Bit
 > Because succession——adding 1——is always a bitflip, the `LSB will always flip twice`, and therefore is the only bit that is always preserved in `2's complement conversions`
 
 > [!tip] Reversal and Binary

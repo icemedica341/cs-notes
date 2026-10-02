@@ -1,5 +1,6 @@
 ---
-title: "🧮 Formula Reference"
+title: "Formula Reference"
+aliases: ["networking/formula-reference/"]
 date: 2026-09-23
 draft: false
 ---

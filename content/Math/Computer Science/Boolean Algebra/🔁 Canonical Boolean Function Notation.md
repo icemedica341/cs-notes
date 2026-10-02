@@ -4,7 +4,7 @@ date: 2025-11-08
 draft: false
 ---
 
-> [!Why we invented this]
+> [!tip|Why we invented this]
 > Canonical notation exists to **standardize Boolean expressions** for truth-table alignment, simplification, and implementation.
 >
 > It must convey:
@@ -45,7 +45,7 @@ F(X, Y, Z) = ΠM(0, 3, 6, 8)   ← Product of Maxterms (POS)
 | `F = m₁ + m₂ + m₅ + m₇`| Expanded form—fine for synthesis, not canonical     |
 | `F(X,Y,Z) = Σ(1,2,5,7)`| Missing term type—ambiguous whether minterms used  |
 
-> [!Audit Flag]
+> [!warning|Audit Flag]
 > Canonical notation must be **self-contained** and **unambiguous**.
 > Anything less sacrifices semantic integrity.
 

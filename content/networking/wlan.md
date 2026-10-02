@@ -1,5 +1,6 @@
 ---
-title: "📶 WLAN"
+title: "WLAN"
+aliases: ["networking/wlan/"]
 date: 2026-09-23
 draft: false
 ---

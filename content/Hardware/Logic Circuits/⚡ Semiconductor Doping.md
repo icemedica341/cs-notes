@@ -6,7 +6,7 @@ draft: false
 
 ## 🧠 Motivation
 
-> [!Why we care]
+> [!tip|Why we care]
 > Semiconductors like silicon are **not naturally conductive**—they have:
 >
 > - A **bandgap** that blocks free movement of electrons

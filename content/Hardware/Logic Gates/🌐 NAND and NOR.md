@@ -50,5 +50,5 @@ To express all Boolean functions, we need:
 
 ---
 
-> [!Etymology]
+> [!note|Etymology]
 > Find out more about primitive NAND $(\uparrow)$  and NOR $(\downarrow)$ expressions at [[🔣 Sheffer Stroke and Pierce Arrow| Sheffer Stroke and Pierce Arrow]]

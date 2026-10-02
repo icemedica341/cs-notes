@@ -1,5 +1,6 @@
 ---
-title: "🔀 Network Paradigms"
+title: "Network Paradigms"
+aliases: ["networking/network-paradigms/"]
 date: 2026-09-23
 draft: false
 ---

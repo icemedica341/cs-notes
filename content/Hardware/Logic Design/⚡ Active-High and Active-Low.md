@@ -4,7 +4,7 @@ date: 2025-11-08
 draft: false
 ---
 
-> [!Why we invented this]
+> [!tip|Why we invented this]
 > Digital signals are binary—either `1` or `0`.
 > But what those values **mean** depends on how the circuit is designed.
 >
@@ -47,7 +47,7 @@ draft: false
 
 ### 📊 Truth Table Interpretation
 
-> [!Audit Trigger]
+> [!warning|Audit Trigger]
 > A signal’s **active polarity** determines when the circuit responds to other inputs.
 > You can detect this by analyzing when the output starts reacting to changes in other signals.
 
@@ -93,7 +93,7 @@ draft: false
 | `SIGNAL_N`   | Active Low (suffix `_N` for “negated”) |
 | `SIGNAL̅`     | Active Low (overbar notation, common in schematics) |
 
-> [!Audit Flag]
+> [!warning|Audit Flag]
 > Always check whether a signal is **active high or low** before interpreting its behavior.
 > Never assume `1 = active` or `0 = inactive` without polarity context.
 

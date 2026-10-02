@@ -1,5 +1,6 @@
 ---
-title: "🏘️ LAN Introduction"
+title: "LAN Introduction"
+aliases: ["networking/lan-introduction/"]
 date: 2026-09-23
 draft: false
 ---

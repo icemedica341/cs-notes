@@ -6,7 +6,7 @@ draft: false
 
 ## 🧠 Motivation
 
-> [!Why we care]
+> [!tip|Why we care]
 > LEDs are PN junction diodes that emit light through electroluminescence. But unlike regular diodes, they’re engineered to convert electrical energy into visible photons efficiently.
 >
 > This note scaffolds the physics, material choices, and design optimizations that make LEDs possible—and powerful.

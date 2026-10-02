@@ -31,15 +31,15 @@ configuration:
         highlight: rgba(162, 129, 93, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#2e261f"
+        lightgray: "#26211c"
+        gray: "#6b563d"
+        darkgray: "#ab916d"
+        dark: "#d7c0a3"
+        secondary: "#e5aa1f"
+        tertiary: "#108454"
+        highlight: rgba(229, 170, 31, 0.15)
+        textHighlight: "#ffbb0033"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -72,7 +72,7 @@ plugins:
     order: 50
     layout:
       position: right
-      priority: 30
+      priority: 10
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
@@ -127,16 +127,20 @@ plugins:
   - source: "@quartz-community/content-page"
     enabled: true
   - source: "@quartz-community/folder-page"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/tag-page"
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      folderDefaultState: collapsed
+      folderClickBehavior: collapse
+      useSavedState: true
     layout:
       position: left
       priority: 50
   - source: "@quartz-community/graph"
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 10
