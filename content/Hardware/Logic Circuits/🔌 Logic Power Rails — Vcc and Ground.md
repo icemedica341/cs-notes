@@ -1,5 +1,6 @@
 ---
 title: "🔌 Logic Power Rails — Vcc and Ground"
+aliases: ["hardware/logic-circuits/🔌-vcc-and-ground/"]
 date: 2025-11-08
 draft: false
 ---

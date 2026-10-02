@@ -69,19 +69,7 @@ article table th {
   vertical-align: top !important;
 }
 
-// --- 8. thick-cursor: editor-only (CodeMirror); no editor in static site ---
-// Kept verbatim for 1:1 snippet parity; matches nothing in the build output.
-.cm-editor .cm-cursor {
-  background-color: black !important;
-  width: 3px !important;
-  border-left: none !important;
-  opacity: 1 !important;
-  z-index: 10 !important;
-}
-.cm-editor.cm-focused .cm-cursor {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
+// --- 8. thick-cursor removed (2026-10-02 refactor): editor-only CodeMirror, no match in static build ---
 
 
 // --- 9. base-density: 90% reading scale (Loop 3) ---
@@ -111,18 +99,6 @@ html {
 }
 .explorer .folder-outer {
   margin: 0.2rem 0;
-}
-.explorer a,
-.explorer .folder-title,
-.explorer .folder-title span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: block;
-  max-width: 100%;
-}
-.explorer {
-  min-width: 0;
 }
 
 // --- 11. explorer-loop6 toolbar (Loop 6 retry): expand-all only (F1), scoped to .explorer only ---
