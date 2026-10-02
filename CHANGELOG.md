@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- Loop 6 retry surgical 2: explorer expand-all/contract-all button (F1) + folders open by default (F4, folderClickBehavior link). F2 sort + F3 locate deferred to Loop 7.
+
+### Proof
+
+- npx quartz build EXIT 0, 178 parsed / 426 emitted; sitemap 202 locs (177 notes + root + 23 folders + tags index), 202 icemedica341, 0 networking; SPEC Loop 6 retry scope F1+F4: 202/202 (SPEC text says 203; actual 202 = 177 notes + root + 23 folders + tags index; stale pre-loop public held 213 incl. removed networking folder page). Playwright single check clean-storage first-visit 23/23 open label Collapse-all; contract-all 0/23 label Expand-all; expand-all 23/23 label Collapse-all. grep icemedica341 zero in content/ quartz/ quartz-plugins/; graph canvas absent.
+
 ## [0.3.2] - 2026-10-02
 
 ### Changed

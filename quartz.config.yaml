@@ -133,12 +133,18 @@ plugins:
   - source: "@quartz-community/explorer"
     enabled: true
     options:
-      folderDefaultState: collapsed
-      folderClickBehavior: collapse
+      folderDefaultState: open
+      folderClickBehavior: link
       useSavedState: true
     layout:
       position: left
       priority: 50
+  # Loop 6 retry wiring: local override component (F1+F4 only; F2/F3 deferred Loop 7), right after explorer
+  - source: ./quartz-plugins/explorer-loop6
+    enabled: true
+    layout:
+      position: left
+      priority: 51
   - source: "@quartz-community/graph"
     enabled: false
     layout:
