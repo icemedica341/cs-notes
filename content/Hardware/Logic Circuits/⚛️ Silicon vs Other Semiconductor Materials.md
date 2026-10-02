@@ -6,7 +6,7 @@ draft: false
 
 ## 🧠 Motivation: Why We Need Semiconductors
 
-> [!Why we care]
+> [!tip|Why we care]
 > Every digital system—from logic gates to memory cells—relies on the ability to **switch** between ON and OFF states.
 >
 > To build such systems, we need materials that can **precisely control electron flow**.

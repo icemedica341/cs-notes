@@ -41,78 +41,88 @@
     --callout-icon: var(--callout-icon-note);
   }
 
-  &[data-callout="abstract"] {
+  // Loop 3: explicit note alias (same tokens as base guard). Base rule doubles as
+  // the `note` typed color upstream; alias makes `data-callout="note"` intentional,
+  // so only truly unknown directives can ever hit the untyped fallback.
+  &[data-callout="note" i] {
+    --color: #448aff;
+    --border: #448aff44;
+    --bg: #448aff10;
+    --callout-icon: var(--callout-icon-note);
+  }
+
+  &[data-callout="abstract" i] {
     --color: #00b0ff;
     --border: #00b0ff44;
     --bg: #00b0ff10;
     --callout-icon: var(--callout-icon-abstract);
   }
 
-  &[data-callout="info"],
-  &[data-callout="todo"] {
+  &[data-callout="info" i],
+  &[data-callout="todo" i] {
     --color: #00b8d4;
     --border: #00b8d444;
     --bg: #00b8d410;
     --callout-icon: var(--callout-icon-info);
   }
 
-  &[data-callout="todo"] {
+  &[data-callout="todo" i] {
     --callout-icon: var(--callout-icon-todo);
   }
 
-  &[data-callout="tip"] {
+  &[data-callout="tip" i] {
     --color: #00bfa5;
     --border: #00bfa544;
     --bg: #00bfa510;
     --callout-icon: var(--callout-icon-tip);
   }
 
-  &[data-callout="success"] {
+  &[data-callout="success" i] {
     --color: #09ad7a;
     --border: #09ad7144;
     --bg: #09ad7110;
     --callout-icon: var(--callout-icon-success);
   }
 
-  &[data-callout="question"] {
+  &[data-callout="question" i] {
     --color: #dba642;
     --border: #dba64244;
     --bg: #dba64210;
     --callout-icon: var(--callout-icon-question);
   }
 
-  &[data-callout="warning"] {
+  &[data-callout="warning" i] {
     --color: #db8942;
     --border: #db894244;
     --bg: #db894210;
     --callout-icon: var(--callout-icon-warning);
   }
 
-  &[data-callout="failure"],
-  &[data-callout="danger"],
-  &[data-callout="bug"] {
+  &[data-callout="failure" i],
+  &[data-callout="danger" i],
+  &[data-callout="bug" i] {
     --color: #db4242;
     --border: #db424244;
     --bg: #db424210;
     --callout-icon: var(--callout-icon-failure);
   }
 
-  &[data-callout="bug"] {
+  &[data-callout="bug" i] {
     --callout-icon: var(--callout-icon-bug);
   }
 
-  &[data-callout="danger"] {
+  &[data-callout="danger" i] {
     --callout-icon: var(--callout-icon-danger);
   }
 
-  &[data-callout="example"] {
+  &[data-callout="example" i] {
     --color: #7a43b5;
     --border: #7a43b544;
     --bg: #7a43b510;
     --callout-icon: var(--callout-icon-example);
   }
 
-  &[data-callout="quote"] {
+  &[data-callout="quote" i] {
     --color: var(--secondary);
     --border: var(--lightgray);
     --callout-icon: var(--callout-icon-quote);

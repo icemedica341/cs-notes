@@ -46,4 +46,4 @@ The law $A \cup (A \cap B) = A$ makes perfect sense because the intersection $A 
 
 Taking the union of $A$ with a part of itself will always just result in $A$
 
-> [!IMPORTANT] Always assume "OR" is inclusive in a logical or mathematical context unless it is explicitly specified as exclusive OR. This simple rule prevents many common logical mistakes.
+> [!warning|IMPORTANT] Always assume "OR" is inclusive in a logical or mathematical context unless it is explicitly specified as exclusive OR. This simple rule prevents many common logical mistakes.

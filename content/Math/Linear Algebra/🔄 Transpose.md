@@ -143,7 +143,7 @@ $$
 
 ## 🧾 Summary
 
-> [!summary] Transpose Properties
+> [!tip|summary] Transpose Properties
 >
 > - 🔁 Self-inverse: $(A^\top)^\top = A$
 > - ➕ Linearity: $(A \pm B)^\top = A^\top \pm B^\top$

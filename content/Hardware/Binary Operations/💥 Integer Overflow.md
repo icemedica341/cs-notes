@@ -6,7 +6,7 @@ draft: false
 
 ## 🧠 Motivation
 
-> [!Why we care]
+> [!tip|Why we care]
 > Integer overflow is a semantic mismatch between mathematical expectation and hardware constraints.
 >
 > In modular arithmetic, overflow is benign. In fixed-width binary systems, it can flip signs, corrupt logic, or cause unintended wraparound.

@@ -7,7 +7,7 @@ draft: false
 
 ## 🧠 Motivation
 
-> [!Why we invented this]
+> [!tip|Why we invented this]
 > Parity bits offer a lightweight method for **error detection** in digital communication and storage.
 >
 > By encoding the **evenness or oddness** of 1s in a binary word, parity bits help verify data integrity without heavy computational overhead.

@@ -1,5 +1,6 @@
 ---
-title: "🌐 Introduction to Computer Networks"
+title: "Introduction to Computer Networks"
+aliases: ["networking/introduction-to-computer-networks/"]
 date: 2026-09-23
 draft: false
 ---

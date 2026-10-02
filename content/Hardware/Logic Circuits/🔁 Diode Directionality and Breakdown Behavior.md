@@ -6,7 +6,7 @@ draft: false
 
 ## 🧠 Motivation
 
-> [!Why we care]
+> [!tip|Why we care]
 > Diodes are designed to favor current flow in one direction (forward bias), but under extreme reverse bias, they can conduct in the opposite direction—triggering breakdown mechanisms that are crucial in voltage regulation and protection circuits.
 
 ---

@@ -92,7 +92,7 @@ There are 2 ways to modify a variable through the addition and equality notation
 > [!tip]
 > The changing of an object in memory using the same reference is called `rebinding`
 
-> [!Conclusion]
+> [!note|Conclusion]
 Thus, there is no difference between `a += 1` and `a = a + 1` for immutable types.
 >
 > In this case, `a += 1` is `syntactic sugar`
@@ -121,7 +121,7 @@ Thus, there is no difference between `a += 1` and `a = a + 1` for immutable type
 >
 > `a = [1, 2]` <----------- Memory `B`
 
-> [!Conclusion]
+> [!note|Conclusion]
 > Thus, for mutable types there is a difference between `a += 1` and `a = a + 1`
 
 ## ✅ Best Practices

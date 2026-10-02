@@ -79,7 +79,7 @@ else:
 
 ## 🛡️ Best Practice Debate
 
-> [!CAUTION] 💡 Readability vs. Conciseness
+> [!warning|CAUTION] 💡 Readability vs. Conciseness
 > **The Argument Against:**
 >
 > - Many Python style guides and developers avoid `loop-else`. They argue that using `else` in this context—meaning "run on success"—is confusing and counter-intuitive, especially when compared to `if-else` (meaning "run on failure to meet condition").
