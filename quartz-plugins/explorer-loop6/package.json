@@ -1,7 +1,7 @@
 {
   "name": "explorer-loop6",
   "version": "1.0.0",
-  "description": "Loop 6 retry for cs-notes: expand/contract-all (F1) + default-open (F4). F2 sort + F3 locate deferred to Loop 7.",
+  "description": "Loop 6 retry (F1+F4) + Loop 7 (F2 sort toggle + F3 locate-centre) for cs-notes explorer.",
   "type": "module",
   "exports": {
     "./components": "./components/index.js"
@@ -9,14 +9,14 @@
   "quartz": {
     "name": "explorer-loop6",
     "displayName": "Explorer Loop6 Retry",
-    "description": "Loop 6 retry: expand-all (F1) + default-open (F4).",
+    "description": "Loop 6 retry F1+F4 + Loop 7 F2+F3 explorer behaviour.",
     "version": "1.0.0",
     "category": "component",
     "quartzVersion": ">=5.0.0",
     "components": {
       "ExplorerLoop6": {
         "displayName": "Explorer Loop6",
-        "description": "Injects Loop 6 retry explorer behaviour F1+F4 (no visible markup of its own).",
+        "description": "Injects explorer behaviour F1+F4 (Loop 6 retry) + F2+F3 (Loop 7); no visible markup of its own.",
         "defaultPosition": "left",
         "defaultPriority": 51
       }
