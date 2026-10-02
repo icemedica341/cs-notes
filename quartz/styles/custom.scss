@@ -89,7 +89,29 @@ html {
   font-size: 90%;
 }
 
-// --- 10. explorer-ellipsis (Loop 4): 1-line truncate — scoped to .explorer only ---
+// --- 10. explorer-ellipsis (Loop 4): 1-line truncate + de-bold + vertical spacing (Loop 8 revert fix) ---
+.explorer a,
+.explorer .folder-title,
+.explorer .folder-title span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  max-width: 100%;
+  font-weight: 400;
+}
+.explorer {
+  min-width: 0;
+}
+.explorer .explorer-content ul {
+  gap: 0.35rem;
+}
+.explorer .explorer-content li {
+  padding: 0.15rem 0;
+}
+.explorer .folder-outer {
+  margin: 0.2rem 0;
+}
 .explorer a,
 .explorer .folder-title,
 .explorer .folder-title span {
@@ -130,9 +152,25 @@ html {
   border-color: var(--gray);
 }
 
-// --- 12. explorer-loop7 flash (Loop 7): 3s locate highlight, scoped to .explorer only ---
-.explorer a.explorer-loop7-flash {
-  outline: 2px solid var(--tertiary);
-  outline-offset: 1px;
-  border-radius: 2px;
+
+// --- 12. explorer-no-toggle (2026-10-02): remove desktop collapse toggle, keep title static ---
+// Upstream @quartz-community/explorer renders button.title-button.explorer-toggle.desktop-explorer
+// (h2 Explorer + svg.fold) whose handler toggles .collapsed on div.explorer. Zero-blast-radius
+// removal: make it non-interactive + hide its fold arrow. Untouched: mobile-explorer toggle,
+// .explorer-loop6-toolbar (expand-all F1 + sort F2), .folder-icon/.folder-button chevrons (F3 locate).
+.explorer button.desktop-explorer.explorer-toggle {
+  pointer-events: none;
+  cursor: default;
+}
+.explorer button.desktop-explorer.explorer-toggle .fold {
+  display: none;
+}
+// Safety: stale .collapsed must never hide content on desktop.
+@media all and (min-width: 801px) {
+  .explorer.collapsed .explorer-content {
+    display: block;
+  }
+  .explorer.collapsed {
+    flex-basis: auto;
+  }
 }
