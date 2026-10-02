@@ -1,6 +1,5 @@
 ---
 title: "Ethernet"
-aliases: ["networking/ethernet/"]
 date: 2026-09-23
 draft: false
 ---

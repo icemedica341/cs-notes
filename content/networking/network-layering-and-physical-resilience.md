@@ -1,6 +1,5 @@
 ---
 title: "Network Layering and Physical Resilience"
-aliases: ["networking/network-layering-and-physical-resilience/"]
 date: 2026-09-23
 draft: false
 ---
