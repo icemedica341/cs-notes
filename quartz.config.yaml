@@ -139,7 +139,7 @@ plugins:
     layout:
       position: left
       priority: 50
-  # Loop 6 retry wiring: local override component (F1+F4 only; F2/F3 deferred Loop 7), right after explorer
+  # Loop 7 wiring: local override component (F1+F4 Loop 6 retry + F2 sort + F3 locate), right after explorer
   - source: ./quartz-plugins/explorer-loop6
     enabled: true
     layout:

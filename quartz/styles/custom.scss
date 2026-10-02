@@ -129,3 +129,10 @@ html {
   color: var(--tertiary);
   border-color: var(--gray);
 }
+
+// --- 12. explorer-loop7 flash (Loop 7): 3s locate highlight, scoped to .explorer only ---
+.explorer a.explorer-loop7-flash {
+  outline: 2px solid var(--tertiary);
+  outline-offset: 1px;
+  border-radius: 2px;
+}

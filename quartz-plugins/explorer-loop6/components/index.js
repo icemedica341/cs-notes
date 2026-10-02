@@ -1,9 +1,10 @@
 // Explorer Loop 6 retry override (cs-notes, Quartz 5) — SURGICAL 2 ONLY.
-// F1 expand/contract-all button + F4 default-open. F2 sort + F3 locate deferred to Loop 7.
+// F1 expand/contract-all button + F4 default-open. F2 sort + F3 locate ship via ./loop7.js (Loop 7).
 // Renders no markup of its own; injects behaviour script as afterDOMLoaded,
 // directly after the upstream explorer.
 // NOTE: the client script below must not contain backticks or ${ sequences,
 // as it is embedded in a template literal.
+import { loop7Script } from "./loop7.js"
 const loop6Script = `(function () {
 if (window.__explorerLoop6) return;
 window.__explorerLoop6 = true;
@@ -124,7 +125,7 @@ initAll();
 export function ExplorerLoop6(_opts) {
   const Component = () => null;
   Component.displayName = "ExplorerLoop6";
-  Component.afterDOMLoaded = loop6Script;
+  Component.afterDOMLoaded = [loop6Script, loop7Script];
   return Component;
 }
 

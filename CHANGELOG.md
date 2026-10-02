@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Loop 6 retry surgical 2: explorer expand-all/contract-all button (F1) + folders open by default (F4, folderClickBehavior link). F2 sort + F3 locate deferred to Loop 7.
+- Loop 7 surgical 2: explorer sort toggle A-Z/Z-A (F2, `explorerSortDir` localStorage persist, folders-first both ways, button next to expand/collapse) + locate+centre active link (F3, ancestors expanded, centred in `.explorer-content`, page scroll untouched, 3s flash). E2E: `quartz-plugins/explorer-loop6/sort-locate.test.js` (15 tests).
 
 ### Proof
 
