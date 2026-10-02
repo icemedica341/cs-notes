@@ -14,7 +14,7 @@ npx quartz build --serve
 
 | Path                       | What                                        |
 | -------------------------- | ------------------------------------------- |
-| `content/`                 | Markdown source (198 notes)                 |
+| `content/`                 | Markdown source (174 notes)                 |
 | `scripts/[redacted]` | Converts Obsidian vault → Hugo content      |
 | `layouts/`                 | Custom render hooks (KaTeX, callouts)       |
 | `assets/katex/`            | KaTeX client-side renderer                  |
