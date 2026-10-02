@@ -1,5 +1,6 @@
 ---
 title: "🔁 Boolean Equivalence — A ⊕ B ≡ A ⊙ B'"
+aliases: ["math/computer-science/boolean-algebra/🔁-a-⊕-b-≡-a-⊙-b'/"]
 date: 2025-11-08
 draft: false
 ---

@@ -12,6 +12,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Loop 6 retry surgical 2: explorer expand-all/contract-all button (F1) + folders open by default (F4, folderClickBehavior link). F2 sort + F3 locate deferred to Loop 7.
 - Loop 7 surgical 2: explorer sort toggle A-Z/Z-A (F2, `explorerSortDir` localStorage persist, folders-first both ways, button next to expand/collapse) + locate+centre active link (F3, ancestors expanded, centred in `.explorer-content`, page scroll untouched, 3s flash). E2E: `quartz-plugins/explorer-loop6/sort-locate.test.js` (15 tests).
 
+### Fixed
+
+- Folder 404s: lowercased section links in `content/index.md` (`./hardware/`, `./math/`, `./software/`, `./networking/`); Quartz `slugifyPath` lowercases every segment so capital links 404'd on case-sensitive Pages.
+- Removed `aliases: ["networking"]` self-alias on `content/networking/index.md` (stray root `public/networking.html` alongside real `public/networking/index.html`).
+- Pointed `package.json` homepage/repository + `README.md` site URL at `cs-notes` (was `cs-notes`); `quartz.config.yaml` baseUrl + footer already correct, no change.
+- Rebuilt from deleted `public/` (gitignored build output, safe to delete); `alias-redirects` case-redirect stubs for old capital leaf URLs kept as desirable redirects.
+- Live verification 2026-10-02 (Actions run 36958978106 success): `/`, `/hardware/`, `/math/`, `/software/`, `/networking/`, leaf + `/tags/` all 200. (Full evidence was `cs-notes-404-fix.md`, folded here and removed.)
+
 ### Proof
 
 - npx quartz build EXIT 0, 178 parsed / 426 emitted; sitemap 202 locs (177 notes + root + 23 folders + tags index), 202 icemedica341, 0 networking; SPEC Loop 6 retry scope F1+F4: 202/202 (SPEC text says 203; actual 202 = 177 notes + root + 23 folders + tags index; stale pre-loop public held 213 incl. removed networking folder page). Playwright single check clean-storage first-visit 23/23 open label Collapse-all; contract-all 0/23 label Expand-all; expand-all 23/23 label Collapse-all. grep icemedica341 zero in content/ quartz/ quartz-plugins/; graph canvas absent.
@@ -36,7 +44,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Loop 2 surgical: dual-font dedupe (Inter single href), canonical Hardware/hardware dedupe, remove dead weight [redacted] 207+content/docs 191, hard line breaks in callouts, Networking Title-Case.
+- Loop 2 surgical: dual-font dedupe (Inter single href), canonical Hardware/hardware dedupe, remove dead weight hugo-content 207+content/docs 191, hard line breaks in callouts, Networking Title-Case.
 
 ## [0.3.0] - 2026-06-07
 
@@ -80,7 +88,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Homepage card layout: removed section cards, dynamic column counts, 4-col and 2-col responsive grids.
 - Slugified folder names and section card links to fix 404 errors on non-ASCII paths.
 - Renamed site to "CS Notes" and updated misc section subtitle.
-- Removed vault metadata from tracking (`[redacted]`, PNG artifacts, duplicate metadata).
+- Removed vault metadata from tracking (`Keep Notes`, PNG artifacts, duplicate metadata).
 - Cleaned up repository: deleted Hugo-Half-Failed-Implementation directory and 117 stale agent workflow files.
 
 ### Optimized

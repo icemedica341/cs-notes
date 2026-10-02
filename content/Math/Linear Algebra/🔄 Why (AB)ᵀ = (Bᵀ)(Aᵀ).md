@@ -1,5 +1,6 @@
 ---
 title: "🔄 Why (AB)ᵀ = (Bᵀ)(Aᵀ)"
+aliases: ["math/linear-algebra/🔄-(ab)ᵀ-=-(bᵀ)(aᵀ)/"]
 date: 2025-11-08
 draft: false
 ---

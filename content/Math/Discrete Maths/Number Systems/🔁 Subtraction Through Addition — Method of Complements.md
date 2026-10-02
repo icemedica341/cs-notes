@@ -1,5 +1,6 @@
 ---
 title: "🔁 Subtraction Through Addition — Method of Complements"
+aliases: ["math/discrete-maths/number-systems/🔁-method-of-complements/"]
 date: 2025-11-08
 draft: false
 ---
