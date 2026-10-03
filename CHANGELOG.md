@@ -44,7 +44,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Loop 2 surgical: dual-font dedupe (Inter single href), canonical Hardware/hardware dedupe, remove dead weight hugo-content 207+content/docs 191, hard line breaks in callouts, Networking Title-Case.
+- Loop 2 surgical: dual-font dedupe (Inter single href), canonical Hardware/hardware dedupe, remove dead weight legacy content 207+191, hard line breaks in callouts, Networking Title-Case.
 
 ## [0.3.0] - 2026-06-07
 
