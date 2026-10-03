@@ -19,3 +19,4 @@ __pycache__/
 # Editor swapfiles
 *.swp
 *.swo
+test-results/

@@ -5,6 +5,9 @@ draft: false
 ---
 
 Study notes for computer science — hardware, mathematics, and software. Use the sidebar to browse, or search for a topic.
+>
+> [!NOTE]
+> These are my personal study notes — my understanding at the time, not a textbook. Some of it has mistakes; use at your own discretion.
 
 ## Sections
 
